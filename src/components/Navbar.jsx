@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { SignedIn, SignedOut, UserButton, auth } from "@clerk/nextjs";
+import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 
 import { FaRegUserCircle } from "react-icons/fa";
 import { IoSearch } from "react-icons/io5";
@@ -14,9 +14,7 @@ import Logo from "../../public/assets/img/logo.png";
 import Catalog from "../../public/assets/icons/catalog.png";
 
 const Navbar = async () => {
-  const { userId } = auth();
-  console.log(auth());
-
+ 
   return (
     <>
       <nav className="flex justify-between py-5 items-center container-banner">
