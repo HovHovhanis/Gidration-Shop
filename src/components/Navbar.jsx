@@ -1,3 +1,6 @@
+"use client"
+
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -13,7 +16,14 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import Logo from "../../public/assets/img/logo.png";
 import Catalog from "../../public/assets/icons/catalog.png";
 
-const Navbar = async () => {
+import OpenCatalog from "./OpenCatalog";
+
+const Navbar = () => {
+  const [open, useOpen] = useState(false)
+
+  const handleOpenCatalog = () => {
+    useOpen(!open)
+  }
  
   return (
     <>
@@ -34,7 +44,7 @@ const Navbar = async () => {
                 <Link className="hover:text-btnColor transition-all ease-linear" href={"/"}>Гарантии и возврат</Link>
               </li>
               <li>
-                <Link className="hover:text-btnColor transition-all ease-linear" href={"/"}>Доставка</Link>
+                <Link className="hover:text-btnColor transition-all ease-linear" href={"/delivery"}>Доставка</Link>
               </li>
               <li>
                 <Link className="hover:text-btnColor transition-all ease-linear" href={"/"}>Оплата</Link>
@@ -70,7 +80,7 @@ const Navbar = async () => {
       <SignedIn>
         <div className="flex justify-between items-center mb-20 container-banner">
           <div className="flex items-center gap-4">
-            <button className="flex items-center gap-5 text-btnColor">
+            <button className="flex items-center gap-5 text-btnColor" onClick={handleOpenCatalog}>
               <Image src={Catalog} alt="catalog" width={31} height={31} />
               Каталог товаров
             </button>
@@ -85,7 +95,7 @@ const Navbar = async () => {
                   className=" w-full py-2 px-2 border-none focus:outline-none text-textColor xl:font-bold xs:font-light md:font-light xs:text-[12px]"
                 />
               </div>
-              <button className="bg-btnColor py-2 px-6">
+              <button className="bg-btnColor py-2 px-6 rounded-e">
                 <IoSearch size={40} color="#fff" />
               </button>
             </div>
@@ -109,13 +119,18 @@ const Navbar = async () => {
               Сравнение
             </button>
 
-            <button className="text-btnColor flex flex-col items-center">
-              <FiShoppingCart size={25} />
-              Корзина
-            </button>
+            <Link href={'/cart'}>
+              <button className="text-btnColor flex flex-col items-center">
+                <FiShoppingCart size={25} />
+                Корзина
+              </button>
+            </Link>
+
           </div>
         </div>
       </SignedIn>
+
+      { open && <OpenCatalog /> }
     </>
   );
 };

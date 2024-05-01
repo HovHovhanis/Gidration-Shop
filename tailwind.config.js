@@ -26,10 +26,13 @@ module.exports = {
     },
     backgroundImage: {
       aboutBg: "url('../../public/assets/img/about-bg.png')",
+      aboutPageBg: "url('../../public/assets/img/about-page-bg.png')",
+      contactBg: "url(../../public/assets/img/about-contact-bg.png)",
       popularBg: "url('../../public/assets/img/popular-bg.png')",
       popularSliderImg1: "url('../../public/assets/img/popular-slider-1.png')",
       popularSliderImg2: "url('../../public/assets/img/popular-slider-2.png')",
       newsBg: "url('../../public/assets/img/nuws-bg.png')",
+      catalogBg: "url('../../public/assets/img/catalog.png')",
     },
     extend: {
       productsShadow: '1px 1px 4px 0px #4798DEB2'

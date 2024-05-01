@@ -18,11 +18,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn {
-  @apply py-3 px-8 rounded-md bg-btnColor text-[#fff] text-center font-bold border-none cursor-pointer 
+  @apply py-3 px-8 rounded-md bg-btnColor text-[#fff] text-center font-bold border-none cursor-pointer hover:bg-darkBlue transition-all ease-linear
 }
-
 .products_block {
   @apply bg-[#ffff] rounded-md border-lightGary px-4 py-4 flex flex-col h-[500px]  justify-between gap-3 hover:shadow-2xl transition-all
+}
+
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
 }
 
 .swiper-button-prev, .swiper-button-next {

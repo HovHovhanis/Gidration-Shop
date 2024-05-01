@@ -19,6 +19,7 @@ export const products = [
         productsPriceText: 'В наличии',
         productsPrice: '15 000 ₽',
         productsBtn: 'В корзину',
+        quantity: 1
     },
     {
         id: 2,
@@ -181,6 +182,7 @@ export const products = [
         productsBtn: 'В корзину',
     },
 ]
+
 
 
 import aboutIcon1 from '../../public/assets/icons/icon-1.png'
@@ -523,3 +525,345 @@ export const newsSlider= [
 ]
 
 
+import iconAboutPage1 from '../../public/assets/icons/icon-3.png';
+import iconAboutPage2 from '../../public/assets/icons/icon-1.png';
+import iconAboutPage3 from '../../public/assets/icons/icon-5.png';
+import iconAboutPage4 from '../../public/assets/icons/icon-7.png';
+import iconAboutPage5 from '../../public/assets/icons/icon-9.png';
+import iconAboutPage6 from '../../public/assets/icons/icon-4.png';
+import iconAboutPage7 from '../../public/assets/icons/icon-8.png';
+
+
+export const aboutPageBlocks = [
+    {
+        id: 1,
+        titleBlock: 'Почему стоить купить сантехнику именно у нас?' ,
+        blocks: [
+            {
+                id: 1,
+                icons: iconAboutPage1,
+                subtitle:'ШИРОКИЙ АССОРТИМЕНТ ТОВАРОВ',
+                text: 'Большой ассортимент ванн, унитазов и раковин'
+            },
+            {
+                id: 2,
+                icons: iconAboutPage2,
+                subtitle:'ДОСТАВКА',
+                text: 'Быстрая и бережная доставка по Краснодару и Краснодарскому краю - от 1 до 3х дней'
+            },
+            {
+                id: 3,
+                icons: iconAboutPage3,
+                subtitle:'ГАРАНТИЯ КАЧЕСТВА',
+                text: 'Высокое и неизменное качество. Гарантия производителя на сантехнические изделия.'
+            },
+            {
+                id: 4,
+                icons: iconAboutPage4,
+                subtitle:' ИНТЕРНЕТ-МАГАЗИН',
+                text: 'Удобный интернет-магазин с качественными фотографиями продукции, который избавит от ненужных посещений традиционных магазинов и бесконечных поисков по интернету'
+            },
+            {
+                id: 5,
+                icons: iconAboutPage5,
+                subtitle:'СЕРТИФИЦИРОВАННАЯ САНТЕХНИКА',
+                text: 'Только сертифицированная и оригинальная сантехника'
+            },
+            {
+                id: 6,
+                icons: iconAboutPage6,
+                subtitle:'КЛИЕНТСКИЙ СЕРВИС',
+                text: 'Профессиональные консультации по подбору и покупке'
+            },
+            {
+                id: 7,
+                icons: iconAboutPage7,
+                subtitle:'ОПЛАТА',
+                text: 'Удобные способы оплаты - наличный/безналичный расчет или на расчетный счет'
+            },
+        ]
+    },
+  
+]
+
+
+import recomendedImg1 from '../../public/assets/img/recomended-1.png'
+import recomendedImg2 from '../../public/assets/img/recomended-2.png'
+import recomendedImg3 from '../../public/assets/img/recomended-3.png'
+import recomendedImg4 from '../../public/assets/img/recomended-4.png'
+import recomendedImg5 from '../../public/assets/img/recomended-5.png'
+import recomendedImg6 from '../../public/assets/img/recomended-6.png'
+import recomendedImg7 from '../../public/assets/img/recomended-7.png'
+import recomendedImg8 from '../../public/assets/img/recomended-8.png'
+import recomendedImg9 from '../../public/assets/img/recomended-9.png'
+import recomendedImg10 from '../../public/assets/img/products-6.png'
+import recomendedImg11 from '../../public/assets/img/products-7.png'
+
+
+export const recomendedProducts = [
+    {
+        id: 1,
+        img:recomendedImg1,
+        url: '/',
+        text: 'ВАННЫ (акриловые, стальные,  чугунные, литьевые)'
+    },
+    {
+        id: 2,
+        img:recomendedImg2,
+        url: '/',
+        text: 'ДУШЕВЫЕ КАБИНЫ'
+    },
+    {
+        id: 3,
+        img:recomendedImg3,
+        url: '/',
+        text: 'ДУШЕВЫЕ УГЛЫ И ОГРАЖДЕНИЯ'
+    },
+    {
+        id: 4,
+        img:recomendedImg4,
+        url: '/',
+        text: 'РАКОВИНЫ И КУХОННЫЕ МОЙКИ'
+    },
+    {
+        id: 5,
+        img:recomendedImg5,
+        url: '/',
+        text: 'СИСТЕМЫ ИНСТАЛЛЯЦИИ'
+    },
+    {
+        id: 6,
+        img:recomendedImg6,
+        url: '/',
+        text: 'УНИТАЗЫ И БИДЕ'
+    },
+    {
+        id: 7,
+        img:recomendedImg7,
+        url: '/',
+        text: 'СМЕСИТЕЛИ'
+    },
+    {
+        id: 8,
+        img:recomendedImg8,
+        url: '/',
+        text: 'ПОЛОТЕНЦЕСУШИТЕЛИ'
+    },
+    {
+        id: 9,
+        img:recomendedImg9,
+        url: '/',
+        text: 'СУШИЛКИ ДЛЯ РУК'
+    },
+    {
+        id: 10,
+        img:recomendedImg10,
+        url: '/',
+        text: 'АКСЕССУАРЫ ДЛЯ ВАННЫХ КОМНАТ'
+    },
+    {
+        id: 11,
+        img:recomendedImg11,
+        url: '/',
+        text: 'МЕБЕЛЬ ДЛЯ ВАННЫХ КОМНАТ'
+    },
+    {
+        id: 12,
+        img:recomendedImg1,
+        url: '/',
+        text: 'КОМПЛЕКТУЮЩИЕ'
+    },
+]
+
+
+
+
+export const categoryBathsLink = [
+    {
+        id: 1,
+        title:'Ванны (____)',
+        bathsLink: [
+            {
+                id: 1,
+                linkText: 'Акриловые ванны (____)',
+            },
+            {
+                id: 2,
+                linkText: 'Литьевые ванны (____)',
+            },
+            {
+                id: 3,
+                linkText: 'Стальные ванны (____)',
+            },
+            {
+                id: 4,
+                linkText: 'Чугунные ванны (____)',
+            },
+            {
+                id: 5,
+                linkText: 'Комплектующие для ванн (____)',
+            },
+        ]
+    }
+]
+
+export const categoriCatalog = [
+    {
+        id:1,
+        titleCategory: 'Прочие категории',
+        category: [
+            {
+                id: 1,
+                categoryLink: '-   Аксессуары (____)'
+            },
+            {
+                id: 2,
+                categoryLink: '-   Ванны (____)'
+            },
+            {
+                id: 3,
+                categoryLink: '-   Душ (____)'
+            },
+            {
+                id: 4,
+                categoryLink: '-   Душевые углы и ограждения (____)'
+            },
+            {
+                id: 5,
+                categoryLink: '-   Комплектующие для сантехники (____)'
+            },
+            {
+                id: 6,
+                categoryLink: '-   Мебель для ванных комнат (____)'
+            },
+            {
+                id: 7,
+                categoryLink: '-   Полотенцесушители (____)'
+            },
+            {
+                id: 8,
+                categoryLink: '-   Санфаянс (____)'
+            },
+            {
+                id: 9,
+                categoryLink: '-   Системы инсталляций (____)'
+            },
+        ]
+    }
+]
+
+export const catalogSlider = [
+    {
+        id: 1,
+        productsImag: productsImg1,
+        productsName: 'Наименование',
+        productsBrand: 'Бренд:',
+        productsCity: ' Страна:',
+        productsPriceText: 'В наличии',
+        productsPrice: '15 000 ₽',
+        productsBtn: 'Подробнее',
+    },
+    {
+        id: 2,
+        productsImag: productsImg2,
+        productsName: 'Наименование',
+        productsBrand: 'Бренд',
+        productsCity: 'Страна:',
+        productsPriceText: 'В наличии',
+        productsPrice: '15 000 ₽',
+        productsBtn: 'Подробнее',
+    },
+    {
+        id: 3,
+        productsImag: productsImg3,
+        productsName: 'Наименование',
+        productsBrand: 'Бренд',
+        productsCity: 'Страна:',
+        productsPriceText: 'В наличии',
+        productsPrice: '15 000 ₽',
+        productsBtn: 'Подробнее',
+    },
+    {
+        id: 4,
+        productsImag: productsImg4,
+        productsName: 'Наименование',
+        productsBrand: 'Бренд',
+        productsCity: 'Страна:',
+        productsPriceText: 'В наличии',
+        productsPrice: '15 000 ₽',
+        productsBtn: 'Подробнее',
+    },
+]
+
+
+
+import car1 from '../../public/assets/icons/icon-1.png';
+import box from '../../public/assets/icons/box.png';
+import car2 from '../../public/assets/icons/car.png';
+
+export const deliveryProps = [
+    {
+        id: 555,
+        icon: car1,
+        btnText: 'Доставка по городу Краснодар и Краснодарскому краю'
+    },
+    {
+        id: 556,
+        icon: box,
+        btnText: 'Доставка по России и в регионы'
+    },
+    {
+        id: 557,
+        icon: car2,
+        btnText: 'Пункт самовывоза товаров'
+    },
+]
+
+export const priceDeliveryProps = [
+    {
+        id: 444,
+        titleBlock: 'Категория товаров',
+    },
+    {
+        id: 445,
+        titleBlock: 'Стоимость по г. Краснодар',
+    },
+    {
+        id: 456,
+        titleBlock: 'Стоимость за пределы г. Краснодар',
+    }, 
+]
+
+export const priceDeliveryPropsTwo = [
+    {
+        id: 457,
+        titleBlock: 'Категория товаров',
+    },
+    {
+        id: 458,
+        titleBlock: 'Стоимость доставки до терминала ТК в г. Краснодар',
+    }, 
+]
+
+
+export const infoBlocks = [
+
+    {
+        id: 1,
+        textInfo: 'Крупногабаритный товар (ванны,душевые кабины, душевые боксы, душевые ограждения, душевые поддоны, сауны, мебель для ванной)',
+        priceInfo: '900 ₽ ',
+        textInfoPrice: '900 ₽ + 30 ₽ за 1 км'
+    },
+    {
+        id: 2,
+        textInfo: 'Крупногабаритный товар (ванны,душевые кабины, душевые боксы, душевые ограждения, душевые поддоны, сауны, мебель для ванной)',
+        priceInfo: '900 ₽ ',
+        textInfoPrice: '900 ₽ + 30 ₽ за 1 км'
+    },
+    {
+        id: 3,
+        textInfo: 'Крупногабаритный товар (ванны,душевые кабины, душевые боксы, душевые ограждения, душевые поддоны, сауны, мебель для ванной)',
+        priceInfo: '900 ₽ ',
+        textInfoPrice: '900 ₽ + 30 ₽ за 1 км'
+    },
+]

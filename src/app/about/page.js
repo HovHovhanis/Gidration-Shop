@@ -1,8 +1,12 @@
 import Link from 'next/link'
 import Title from '@/components/Title'
+import Information from '@/components/pageAbout/Information'
+import RecommendedTavars from '@/components/pageAbout/RecommendedTavars'
+import Contact from '@/components/pageAbout/Contact'
 
 
 const About = () => {
+
   return (
     <div className='my-10'>
       <div className='container-banner'>
@@ -26,8 +30,12 @@ const About = () => {
             обеспечить комфорт каждому клиенту и предоставить отличные решения по организации пространства ванных комнат, кухонь и санузлов. Мы доставим товар в удобное время для клиента и точно в срок, потому что ценим каждого покупателя.
           </p>
         </section>
-      
+
+        <Information />
+        <RecommendedTavars />
       </div>
+      
+      <Contact />
     </div>
   )
 }
